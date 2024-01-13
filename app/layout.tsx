@@ -4,6 +4,7 @@ import SideBar from '@/components/SideBar';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../pages/api/auth/[...nextauth]';
 import Login from '@/components/Login';
+import ClientProvider from '@/components/ClientProvider';
 
 export default async function RootLayout({
   children

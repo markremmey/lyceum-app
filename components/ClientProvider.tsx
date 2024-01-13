@@ -5,7 +5,7 @@ import { Toaster } from 'react-hot-toast';
 export default function ClientProvider() {
   return (
     <>
-      <Toaster position="top-right" reverseOrder={false} />
+      <Toaster position="top-right"/>
     </>
   )
 }
