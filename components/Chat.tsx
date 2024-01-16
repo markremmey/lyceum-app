@@ -20,7 +20,7 @@ function Chat({ chatId }: Props) {
     ))
     
     return (
-        <div className="flex-1 overflow-y-auto overflow-x-hidden"> 
+        <div className="flex-1 overflow-y-auto overflow-x-hidden">
             {messages?.docs.map((message) => (
                 <Message key={message.id} message={message.data()} />
             ))}
