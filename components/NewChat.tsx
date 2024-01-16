@@ -1,3 +1,5 @@
+'use client'
+
 import { PlusIcon } from "@heroicons/react/24/outline"
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation"
@@ -9,18 +11,18 @@ type Props = {
 }
 
 function NewChat() {
-        const router = useRouter();
-        const { data: session } = useSession();
-        const createNewChat = async() => {
-            const doc = await addDoc(
-                collection(db, 'users', session?.user?.email!, 'chats'), 
-                {
-                    userId: session?.user?.email,
-                    createdAt: serverTimestamp()
-                }
-            );
-            router.push(`/chat/${doc.id}`) // Push to the chat  page
-        };
+    const router = useRouter();
+    const { data: session } = useSession();
+    const createNewChat = async() => {
+        const doc = await addDoc(
+            collection(db, 'users', session?.user?.email!, 'chats'), 
+            {
+                userId: session?.user?.email,
+                createdAt: serverTimestamp()
+            }
+        );
+        router.push(`/chat/${doc.id}`) // Push to the chat  page
+    };
     
     return (
         <div onClick={createNewChat} className="border-gray-700 border chatRow">

@@ -15,7 +15,7 @@ type Props = {
 function ChatInput({ chatId }: Props) {
     const [prompt, setPrompt] = useState(''); // This is the message that the user is typing in the input box.
     const {data: session} = useSession();
-    const model = 'davinci';
+    const model = 'gpt-3.5-turbo';
 
     // Event Handler
     const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
