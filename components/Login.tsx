@@ -5,15 +5,14 @@ import Image from "next/image"
 
 function Login() {
     return (
-        <div className="bg-[#11A37F] h-screen flex flex-col items-center">
+        <div className="bg-[#a8a29e] h-screen flex flex-col justify-center items-center">
             <Image
-                src='https://links.papareact.com/2i6' // chatGPT logo
                 width={300}
+                src='/laurel.svg' // Laurel Wreath
                 height={300}
                 alt='logo'
             />
-            <button onClick={() => signIn('google')} className="text-white font-bold text-3xl animate-pulse">Sign In to use Lyceum App</button>
-        
+            <button onClick={() => signIn('google')} className="text-black font-bold text-3xl animate-pulse">Sign In to use Lyceum App</button>
         </div>
     )
 }

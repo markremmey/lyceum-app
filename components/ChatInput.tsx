@@ -36,7 +36,7 @@ function ChatInput({ chatId }: Props) {
             user: {
                 _id: session?.user?.email!,
                 name: session?.user?.name!,
-                avatar: session?.user?.image! || `https://ui-avatars.com/api/?name=${session?.user?.name}`,
+                avatar: session?.user?.image! || '/laurel.svg', // `https://ui-avatars.com/api/?name=${session?.user?.name}`,
             }
         }
         await addDoc(
