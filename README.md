@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-To see a demo of this project visit <a href=lyceum-app.com </a>
+To see a demo of this project visit [Lyceum](lyceum-app.com)
 
 ## Getting Started
 
